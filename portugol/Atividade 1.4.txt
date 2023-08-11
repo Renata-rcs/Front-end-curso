@@ -1,0 +1,26 @@
+programa {
+  funcao inicio() {
+    //Escrever um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no męs (em dinheiro). Sabendo que este vendedor ganha 15% de comissăo sobre suas  efetuadas, informar o seu nome, o salário fixo e salário no final do męs.
+     
+     cadeia nome
+     real decimal, salariofixo, tvendas, salt
+
+     escreva("Digite seu nome: ")
+     leia(nome)
+
+     escreva("Digite seu salário fixo: ")
+     leia(salariofixo)
+
+     escreva("Digite total de vendas em dinheiro no mês: ")
+     leia(tvendas)
+
+     salt = ((tvendas / 100)* 15)+ salariofixo
+   
+
+
+     escreva("\n" , nome , " seu salário fixo é: ", salariofixo, " e seu saláio total no final do mês será de : " , salt)
+
+
+
+    }
+  }
