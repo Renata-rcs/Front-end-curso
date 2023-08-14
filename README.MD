@@ -6,6 +6,6 @@ Repositório criado para desenvolvimento do curso front-end, com intuito de cent
 - [Git](./markdown/git.md)
 - [Markdown](./markdown)
 - [Exercicíos-Portugol](./portugol)
-
+- [HTML](./html)
 
 
