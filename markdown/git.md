@@ -89,4 +89,7 @@ obs:numca trabalhar na linha principal para proteger os dados
 ### **git branch -d**
 Apaga as ramificações
 
+---
+### **git pull**
+
 
