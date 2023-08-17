@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table, th, td{
+            border: 1px solid white;
+            /*border-right: d;*/
+            border-collapse: collapse;
+        }
+        th, td{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Tabelas</h1>
+
+    <table>
+        <caption>Agenda de contatos</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th colspan="2">Telefone / endereço</th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Renata</td>
+                <td>3333-3310</td>
+                <td>Rua dos lindos avenida pessoas maravilhosas</td>
+            </tr>
+            <tr>
+                <td>Fulano</td>
+                <td>3333-1033</td>
+                <td>Rua imaginaria da casa dos gatos</td>
+            </tr>
+            <tr>
+                <td>Ciclano</td>
+                <td>3333-3320</td>
+                <td rowspan="2">Rua dos lindos avenida pessoas feias</td>
+            </tr>
+            <tr>
+                <td>Beltrano</td>
+                <td>3333-2033</td>
+                
+            </tr>
+        </tbody>
+       
+        <tfooter>
+        <tr>
+            <td colspan="3"><p>Criado por Renata Carvalho</p></td>
+        </tr>
+        </tfooter>
+    </table>
+    <br>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>titulo</th>
+                <td>dados</td>
+                <td>dados</td>
+             </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>dadostitulo</th>
+                <td>dadosdados</td>
+                <td>dados</td>
+             </tr>
+             <tr>
+                <th>dadostitulo</th>
+                <td>dadosdados</td>
+                <td>dados</td>
+             </tr>
+        </tbody>
+    </table>
+</body>
+</html>
