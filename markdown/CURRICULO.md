@@ -10,7 +10,7 @@ Data de nascimento: 10/02/1991
 
 Celular: (61) 98265-5395
 
-Email: renatacarvalhotop@gmail.com
+Email: renataa.rcs@gmail.com
 
 Endereço: Qnn 8 conjunto i casa 1 Ceilândia sul, Brasilia-DF
 

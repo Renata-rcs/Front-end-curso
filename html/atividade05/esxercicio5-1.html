@@ -5,29 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Brasileirão</title>
     <style>
-        table, th, td{
-           font: Arial;
-           border: 1px solid;
-           border-style: inset;
+        body{
+        font-family: arial;
         }
-       table {
-           border-collapse: collapse;
-           border-spacing: 2px;
-       }
-     
-       th, td {
-           padding: 2px;
-       }
-       td.number-name {
-           text-align: left;
-       }
+        table{
+            border: 1px solid #dddddd;
+            border-collapse: collapse;
+            width: 475px;
+        }
+        tr{
+            border-top: 1px solid #dddddd;
+            text-align: center;
+            font-size: 14px;
+        }
+        th{
+            text-align: center;
+            font-size: 13px;
+            color: #999999;
+            font-weight:bold;
+        }
+        td{
+            color: #666666;
+            font-size: 14px;
+        }
+        td:nth-child(odd){
+                    background-color:#f7f7f7;
+        }
+ 
    </style>
 </head>
 <body>
 <table>
     <thead>
     <tr style="color: #999999; font: 13px;">
-        <td></td>
+        <th colspan="2"></th>
         <th>P</th>
         <th>J</th>
         <th>V</th>
@@ -39,10 +50,15 @@
         <th>%</th>
     </tr>
     </thead>
+    <col span="1">
+    <col span="1" style="width:35% ;">
+    <col span="7" style="width:6%;">
     </tbody>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #003366; font: 18px;">1 </span><span  style="color: #666666; font: 14px;"> Corinthians</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">17</td>
+    <tr>
+        <td style="font-size: 18px; color: #003366; background-color: white;"><b>1</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+             Corinthias</td>
+        <td style="font-weight:bold;color:black;">17</td>
         <td>7</td>
         <td>5</td>
         <td>2</td>
@@ -53,9 +69,11 @@
         <td>81</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px ; text-align: center;">
-        <td class="number-name"><span style="color: #003366; font: 18px;">2 </span><span style="color: #666666; font: 14px;"> Ceará</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">17</td>
+    <tr >
+        <td style="font-size: 18px; color: #003366; background-color: white;"><b>2</b></td>
+            <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                 Ceará</td>
+            <td style="font-weight:bold;color:black;">17</td>
         <td>7</td>
         <td>5</td>
         <td>2</td>
@@ -66,9 +84,11 @@
         <td>81</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px;  text-align: center;">
-        <td class="number-name"><span style="color: #003366;  font: 18px;">3 </span><span style="color: #666666; font: 14px;"> Fluminense</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">15</td>
+    <tr>
+        <td style="font-size: 18px; color: #003366;background-color: white;"><b>3</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+             Fluminense</td>
+        <td style="font-weight:bold;color:black;">15</td>
         <td>7</td>
         <td>5</td>
         <td>0</td>
@@ -79,9 +99,12 @@
         <td>71.4</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;border-bottom:2px solid #cccccc;">
-        <td class="number-name"><span style="color: #1398BE; font: 18px;">4 </span><span style="color: #666666; font: 14px;"> Santos</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">15</td>
+    <tr>
+        <tr style="border-bottom:2px solid #cccccc;">
+            <td style="font-size: 18px; color: #1398be;background-color: white;"><b>4</b></td>
+            <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                 Santos</td>
+            <td style="font-weight:bold;color:black;">12</td>
         <td>7</td>
         <td>3</td>
         <td>3</td>
@@ -92,10 +115,12 @@
         <td>57.1</td>
         
     </tr>
-      <hr style="border-top: 2px solid #CCCCCC; width: 100%;">
-    <tr style="color: #666666;font: 14px; text-align: center;">
-       <td class="number-name"><span style="color: #DE9800; font: 18px;">5 </span><span style="color: #666666; font: 14px;"> São Paulo</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">11</td>
+     
+    <tr>
+        <td style="font-size: 18px; color: #de9800;background-color: white;"><b>5</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+             São Paulo</td>
+        <td style="font-weight:bold;color:black;">11</td>
         <td>7</td>
         <td>3</td>
         <td>2</td>
@@ -106,9 +131,11 @@
         <td>52.4</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #DE9800; font: 18px;">6 </span><span style="color: #666666; font: 14px;"> Goiás</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">10</td>
+    <tr>
+        <td style="font-size: 18px; color: #de9800;background-color: white;"><b>6</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+             Goias</td>
+        <td style="font-weight:bold;color:black;">10</td>
         <td>7</td>
         <td>3</td>
         <td>1</td>
@@ -119,9 +146,11 @@
         <td>47.6</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #DE9800; font: 18px;">7 </span><span style="color: #666666; font: 14px;"> Botafogo</span></td>
-        <td style="font: 14px; font-weight: bold; color: black">9</td>
+    <tr>
+        <td style="font-size: 18px; color: #de9800;background-color: white;"><b>7</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+             Botafogo</td>
+        <td style="font-weight:bold;color:black;">9</td>
         <td>7</td>
         <td>2</td>
         <td>3</td>
@@ -132,9 +161,11 @@
         <td>42.9</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #DE9800; font: 18px;">8 </span><span style="color: #666666; font: 14px;"> Flamengo</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">9</td>
+    <tr>
+        <td style="font-size: 18px; color: #de9800;background-color: white;"><b>8</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+             Flamengo</td>
+        <td style="font-weight:bold;color:black;">9</td>
         <td>7</td>
         <td>2</td>
         <td>3</td>
@@ -145,9 +176,11 @@
         <td>42.9</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #DE9800; font: 18px;">9 </span><span style="color: #666666; font: 14px;"> Cruzeiro</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">9</td>
+    <tr>
+        <td style="font-size: 18px; color: #de9800;background-color: white;"><b>9</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+             Coritiba</td>
+        <td style="font-weight:bold;color:black;">9</td>
         <td>6</td>
         <td>2</td>
         <td>3</td>
@@ -158,9 +191,11 @@
         <td>50</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #DE9800; font: 18px;">10 </span><span style="color: #666666; font: 14px;"> Guarani</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">9</td>
+    <tr>
+        <td style="font-size: 18px; color: #de9800;background-color: white;"><b>10</b></td>
+            <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                 America-MG</td>
+            <td style="font-weight:bold;color:black;">8</td>
         <td>6</td>
         <td>2</td>
         <td>3</td>
@@ -171,9 +206,11 @@
         <td >50</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #DE9800; font: 18px;">11 </span><span style="color: #666666; font: 14px;"> Palmeiras</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">8</td>
+    <tr>
+        <td style="font-size: 18px; color: #de9800;background-color: white;"><b>11</b></td>
+            <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                 Palmeiras</td>
+            <td style="font-weight:bold;color:black;">8</td>
         <td>6</td>
         <td>2</td>
         <td>2</td>
@@ -184,9 +221,11 @@
         <td>44.4</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #DE9800; font: 18px;">12 </span><span style="color: #666666; font: 14px;"> Grémio</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">8</td>
+    <tr>
+        <td style="font-size: 18px; color: #de9800;background-color: white;"><b>12</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+             Cuiabá</td>
+        <td style="font-weight:bold;color:black;">8</td>
         <td>7</td>
         <td>2</td>
         <td>2</td>
@@ -197,9 +236,11 @@
         <td>38.1</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #cccccc; font: 18px;">13 </span><span style="color: #666666; font: 14px;"> Avai</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">8</td>
+    <tr>
+        <td style="font-size: 18px; color: #cccccc;background-color: white;"><b>13</b></td>
+            <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                Avai</td>
+            <td style="font-weight:bold;color:black;">8</td>
         <td>7</td>
         <td>2</td>
         <td>2</td>
@@ -210,9 +251,11 @@
         <td>38.1</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #cccccc; font: 18px;">14 </span><span style="color: #666666; font: 14px;"> Vitória</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">8</td>
+    <tr>
+        <td style="font-size: 18px; color: #cccccc;background-color: white;"><b>14</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+           Bragantino</td>
+        <td style="font-weight:bold;color:black;">8</td>
         <td>7</td>
         <td>2</td>
         <td>2</td>
@@ -223,9 +266,11 @@
         <td>38.1</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #cccccc; font: 18px;">15 </span><span style="color: #666666; font: 14px;"> Prudente</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">8</td>
+    <tr>
+        <td style="font-size: 18px; color: #cccccc;background-color: white;"><b>15</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+            Fortaleza</td>
+        <td style="font-weight:bold;color:black;">8</td>
         <td>6</td>
         <td>2</td>
         <td>2</td>
@@ -236,9 +281,11 @@
         <td>44.4</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center; border-bottom:2px solid #cccccc;">
-        <td class="number-name"><span style="color: #cccccc; font: 18px;">16 </span><span style="color: #666666; font: 14px;"> Atlético-PR</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">7</td>
+    <tr>  <tr style="border-bottom:2px solid #cccccc;">
+        <td style="font-size: 18px; color: #cccccc;background-color: white;"><b>16</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+            Atletico-PR</td>
+        <td style="font-weight:bold;color:black;">7</td>
         <td>7</td>
         <td>2</td>
         <td>1</td>
@@ -250,9 +297,11 @@
         
     </tr>
        
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #C91B04; font: 18px;">17 </span><span style="color: #666666; font: 14px;"> Internacional</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">6</td>
+    <tr>
+        <td style="font-size: 18px; color: #c91b04;background-color: white;"><b>17</b></td>
+            <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                 Internacional</td>
+            <td style="font-weight:bold;color:black;">6</td>
         <td>6</td>
         <td>2</td>
         <td>0</td>
@@ -263,9 +312,11 @@
         <td>33.3</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #C91B04; font: 18px;">18 </span><span style="color: #666666; font: 14px;"> Atlético-MG</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">6</td>
+    <tr>
+        <td style="font-size: 18px; color: #c91b04;background-color: white;"><b>18</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+              Atletico-MG</td>
+        <td style="font-weight:bold;color:black;">6</td>
         <td>7</td>
         <td>2</td>
         <td>0</td>
@@ -276,9 +327,11 @@
         <td>28.6</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #C91B04; font: 18px;">19 </span><span style="color: #666666; font: 14px;"> Vasco</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">5</td>
+    <tr>
+        <td style="font-size: 18px; color: #c91b04;background-color: white;"><b>19</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+            Juventude</td>
+        <td style="font-weight:bold;color:black;">5</td>
         <td>7</td>
         <td>1</td>
         <td>2</td>
@@ -289,9 +342,11 @@
         <td>23.8</td>
         
     </tr>
-    <tr style="color: #666666;font: 14px; text-align: center;">
-        <td class="number-name"><span style="color: #C91B04; font: 18px;">20 </span><span style="color: #666666; font: 14px;"> Atlético-GO</span></td>
-        <td style="font: 14px; font-weight: bold; color: black;">1</td>
+    <tr>
+        <td style="font-size: 18px; color: #c91b04;background-color: white;"><b>20</b></td>
+        <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+              Atletico-GO</td>
+        <td style="font-weight:bold;color:black;">1</td>
         <td>6</td>
         <td>0</td>
         <td>1</td>
