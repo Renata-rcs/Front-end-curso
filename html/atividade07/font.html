@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia</title>
+    
+    <!--link das fonts, onde link sua página com a página da fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+      
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        
+        @font-face{
+            font-family: 'bright';
+            src: url(../../fontes/Bright\ Rose.otf);
+        }
+
+        body {
+            background-color: gainsboro;
+        }
+        h1 {
+            letter-spacing: -5px;/*usa-se para dar espaçamento das letras, negativo letras mais juntas e positivivo letras mais separadas*/
+            text-shadow: 2px 2px 5px black;/*a sombra do texto deslocamento priemiro horizontal x: para direita numeros positivos para esquerda negativos depois vertival y: pra cima numeros negativos ou pra baixo numero positivos,depois estilo da sombra , depois cor da sombra*/
+
+        }
+        h1, h2{
+            font-family: 'bright', sans-serif;
+            color: fuchsia;
+            background-color: pink;
+            text-transform: uppercase; /* qualquer itulo vai ser sempre maiusculo com esta opção*/
+            text-align: left;
+            /*text-decoration: underline overline;
+            text-decoration-color: gray;( mudar apenas a cor da linha da decoração)
+            text-decoration-style: none;(mudar a decoração do estilo da linha usar letra d:aparece as opções)
+            text-decoration: underline dashed white;( linha em baixo do titulo,estilo dashed:pontilhada white:cor branca)*/
+            font-weight: 100;/*força da font importada se é mais fina ou mais grossa, tem em numeração em palavra */
+
+        }
+        p {
+            text-align: justify;
+            text-indent: 20px;/*indentação da primeira linha, espaço para paragrafo, apenas na primeira linha*/
+            /*background-color: aqua;
+            line-height: 3em;( estica a linha, altura da linha)
+            word-spacing: 20px;(espaçamento entre as palavras)
+            text-align-last: right;( muda para esquerda a ultima linha do texto)
+            direction: rtl; (muda a direção do texto a ser mostrado)*/
+
+
+        }
+        a {
+            text-decoration: none;/*texto-decoration: none; usa-se para nao ter nenhum estilo no texto */
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Tipografia</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<small>Adipisci ea quia maiores reiciendis, doloremque quis possimus consectetur cupiditate nam similique,</small>  ratione, consequatur <del>corrupti sint ipsam aperiam tempore deleniti? Nisi, harum?</del></p>
+
+    <del> Renata</del>
+
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vitae culpa quibusdam. Aliquam, nisi aperiam quis modi reprehenderit laboriosam iste vel facere libero. Quas, ut ratione! Assumenda porro distinctio quibusdam ipsam illo. Ipsam saepe cum numquam dolorum ipsa fugit expedita quam deleniti quisquam sed nulla reprehenderit, sunt accusantium sit perferendis.</p>
+
+    
+    <ul><!--semanticamente não significa nada, se quizer que fique semantico tem por as tags sublinhado e etc-->
+        <li style="text-decoration-line: underline ;">Café</li><!--um elemento visual de decoraçaõ linha embaixo-->
+        <br>
+        <li style="text-decoration-line: overline;">Pão</li><!--linha em cima -->
+        <br>
+        <li style="text-decoration-line: line-through;">Mantega</li><!--linha taxado-->
+        <br>
+        <li style="text-decoration-line: underline overline;">Queijo</li><!--linha em cima e em baixo-->
+        <br>
+        <li style="text-decoration-line: underline overline line-through;">Leite</li>
+        <br>
+        <li>
+            <a href="#">Link para o facebook</a>
+        </li>
+    </ul>
+
+    <h2>Serifa</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius reprehenderit ratione perferendis repudiandae excepturi neque tenetur culpa accusantium magnam repellendus! Iure maxime laboriosam consequatur corrupti illo inventore mollitia quas, rerum alias beatae aliquam impedit iusto iste. Eligendi exercitationem quidem hic. Delectus natus ratione inventore dolorem numquam, doloribus placeat cum ut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum praesentium sed laudantium sunt? Dolorem voluptatem natus doloribus soluta deleniti sit exercitationem culpa quod at! Facilis possimus ullam consectetur quas dolorum!</p>
+
+    <h2 style="background-color: paleturquoise;">Renata Carvalho</h2><!--por prioridade como  estilo foi aplicado direto na tag, ele irá obdecer, quem estiver mais perto da tag sera o que ele ira obdecer-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam delectus molestias odio omnis corporis a itaque dolorem facere? Aliquam velit quam esse quia quasi aliquid doloremque eius magni odio.</p>
+
+   
+</body>
+</html>
