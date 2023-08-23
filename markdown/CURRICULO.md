@@ -6,9 +6,9 @@
 
 ### **Renata Carvalho de Souza**
 
-Data de nascimento: 10/02/1991
+Data de nascimento: 00/00/0000
 
-Celular: (61) 98265-5395
+Celular: (61) 90000-0000
 
 Email: renataa.rcs@gmail.com
 
