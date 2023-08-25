@@ -11,8 +11,8 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body{
-           background-image: linear-gradient(to right, red 50%, green, blue);/*fundo de cores em degrade ex:45deg, so dar cert se seu objeto estiver altura e largura red 50% para que metade da pagina seja em degrade vermelho*/
+        body {
+           background-image: linear-gradient(to right, red, green, blue);/*fundo de cores em degrade ex:45deg, so dar certo se seu objeto estiver altura e largura red 50% para que metade da pagina seja em degrade vermelho*/
         }
         header {
             display: flex;
@@ -27,7 +27,18 @@
         
         a {
             text-decoration: none;
-
+        }
+        .btm-entrar:hover {
+            background-color: red;
+        }
+        .btm-entrar {
+            border: 1px solid gray;
+            background-color: rgb(128, 128, 128, 0.287); 
+            border-radius: 2px;
+            padding: 2px;
+        }
+        #globoplay {
+            background-color: blue;
         }
 
     </style>
@@ -39,16 +50,13 @@
             <a href="#" style="color: #c4170c;">g1</a>
             <a href="#" style="color: #06aa48;">g2</a>
             <a href="#" style="color: #ff6700;">gshow</a>
-            <a href="#" style="color: #ee3042;">globoplay</a>
+            <a href="#" id="globoplay" style="color: #ee3042;">globoplay</a>
         </nav>
         <nav style="margin-right: 30px;">
-            <a href="#" style="color:gray;
-            ">assine ja</a>
-            <a href="#" style="border: 1px solid gray;
-            background-color: rgb(128, 128, 128, 0.287); 
-            border-radius: 2px;
-            padding: 2px;">Entrar ></a>
+            <a href="#" style="color:gray;">assine ja</a>
+            <a href="#" class="bmt-entrar">Entrar ></a>
         </nav>
     </header>
+            <a href="#" class="btm-entrar">exemplo 2</a>
     </html>
 </body>

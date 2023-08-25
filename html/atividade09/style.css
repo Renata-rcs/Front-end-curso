@@ -1,0 +1,20 @@
+.paragrafo{
+    background-color: black;
+    color: white;
+}
+#meio{
+  background-color: red;
+  color: white;
+}
+article{
+    height: 100%;/**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#quadrado{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    box-shadow: 0px 0px 20px 20px blue;
+}
