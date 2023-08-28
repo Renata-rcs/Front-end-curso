@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        div{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form><!-- action="formulario.js" iso vai dentro da tag form, pra vc tratar os dados recebidos-->
+        <div>
+            <label for="inome">Nome: </label>
+            <input type="text" id="inome" name="nome" size="10" maxlength="10"><!--tipo texto id inome e nome do imput nome, sempre por as tres informaoções, colocar o i antes do nome no id e no for-->
+        </div>
+        <div>
+            <label for="isobrenome">Sobrenme: </label>
+            <input type="text" id="isobrenome" name="sobrenome">
+        </div>
+        <input type="submit"><!--E o botão que vai enveiar as dados do formulario-->
+    </form>
+    <hr>
+    <h2>Login</h2>
+    <form action="login.js" method="post"><!--usar metodo post para não aparecer sua senha no url-->
+        <div>
+            <label for="inome">Nome: </label>
+            <input type="text" id="inome" name="nome" placeholder="primeiro Nome" required><!--tipo texto id inome e nome do imput nome, sempre por as tres informaoções, colocar o i antes do nome no id e no for, required signifca campo obrigatorio, vc é obrigado a responder-->
+        </div>
+        <div>
+            <label for="iemail">Email: </label>
+            <input type="email" id="iemail" name="email" placeholder="exemplo@exemplo.com" required><!--tipo: email pra ja saber que e um email e diferenete de texto, placeholder="exemplo@exemplo.com" dica para o usuario ver o que te ser digitado no campo-->
+        </div>
+        <div><label for="isenha">Senha: </label>
+            <input type="password" id="isenha" name="senha" maxlength="16" minlength="8" placeholder="senha min 8 max 16" required> <!--password e tipo senha para aparecer as bolinhas na hora que digita a senha, maxlength="16" minlength="8" senha entre 16 e 8 caracteres -->
+        </div>
+        <div>
+            <label for="inascimento">Nascimento: </label>
+            <input type="date" id="inascimento" name="nascimento"  required>
+        </div>
+        <div>
+            <label for="icolor">Seleione a cor: </label>
+            <input type="color" id="icolor" name="color" value="#00ff00">
+        </div>
+        <div>
+            <label for="ifile">Anexe a foto: </label>
+            <input type="file" id="ifile" name="file">
+        </div>
+        <div>
+            <label for="irange">Range: </label>
+            <input type="range" id="irange" name="range" max="5" min="1"><!--exemplo um apesquisa de satisfação de 1 a 5-->
+        </div>
+        <input type="submit" value="Cadastrar"><!--value é o texto que vai no botão submit -->
+    </form>
+</body>
+</html>
