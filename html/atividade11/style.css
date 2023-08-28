@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../../imagem/background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    
+}
+#logo {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+main {
+    background-color: rgba(0, 0, 0, 0.808);
+    height: 60%;
+    width: 50%;
+    max-width: 250px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 80px;
+    justify-content: space-between;
+}
+#um{
+    height: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+.imput {
+    width: 100%;
+    height: 12%;
+    margin: 20px;
+    border: 0;
+    background-color: rgb(59, 59, 59);
+    text-indent: 20px;
+}
+#bot {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 60%;
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+    border: 0;
+}
+#dois {
+    margin-top: 10px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: gray;
+}
+#ifacebook {
+    width: 20px;
+}

@@ -4,60 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <style>
-        body{
-            height: 100vh;
-            display: flex;
-            width: 100vw;
-           background-image: url(../../imagem/background.jpg);
-        }
-       div{
-            margin-bottom: 10px;
-            text-align: center;
-            color: white;
-       }
-       main{
-           height: 100vh;
-       }
-       img{
-           width: 150px;
-       }
-       section{
-
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgba(17, 16, 16, 0.651);
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            width: 300px; /* Largura dos cards */
-       }
-       h1{
-            color: white;
-       }
-       
-    </style>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
+    <img src="../../imagem/netflixlogo.png" id="logo">
     <main>
-        <img src="../../imagem/netflixlogo.png" alt="logo Netflix">
-     <section>
-        <form>
-            <h1>Entrar</h1>
-            <div>
-                <input type="iemail" id="eimail" name="email" placeholder="Email ou número de telefone">
-            </div>
-            <div>
-             <input type="password" id="isenha" name="senha" placeholder="Senha">
-         </div>
-         <input type="submit" value="Entrar" size="20" style="color: red;">
-         <br>
-         <input type="checkbox">
-         <label><small>Lembre-se de mim</small></label> 
-         <input type="submit" value="Precisa de ajuda?" f>
-         </form>
-     </section>
+        <div id="um">
+            <form action="#">
+                <h1>Entrar</h1>
+                <div>
+                    <input class="input" type="iemail" id="eimail" name="email" size="24" placeholder="Email ou número de telefone" required>
+                </div>
+                <div>
+                   <input class="input" type="password" id="isenha" name="senha" size="24" placeholder="Senha" required>
+                   <input class="input" type="submit" value="Entrar" id="bot">
+                </div>
+                <div id="dois">
+                    <div>
+                        <input type="checkbox" name="remember" id="iremember">
+                        <label for="iremember">Lembre-se de mim</label>
+                    </div>
+                    <a href="#">Precisa de ajuda</a>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <a href="#"><img src="../../imagem/Facebook_logo.png" alt="facebook" id="ifacebook">Conectar-se com o facebook</a>
+            <small>Novo por aqui? <a href="#">Assine agora</a></small>
+        </footer>
     </main>
-   
 </body>
 </html>
