@@ -49,8 +49,10 @@ h1 {
     height: 12%;
     margin: 20px;
     border: 0;
-    background-color: rgb(59, 59, 59);
     text-indent: 20px;
+}
+.imput::placeholder{
+    color: white;
 }
 #bot {
     margin-top: 10px;
