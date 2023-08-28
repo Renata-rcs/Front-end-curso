@@ -75,3 +75,6 @@ h1 {
 #ifacebook {
     width: 20px;
 }
+a{
+    text-decoration: none;
+}
