@@ -49,6 +49,7 @@ h1 {
     height: 12%;
     margin: 20px;
     border: 0;
+    border-radius: 5px;
     text-indent: 20px;
 }
 .imput::placeholder{
@@ -61,7 +62,7 @@ h1 {
     height: 60%;
     background-color: red;
     color: white;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 0;
 }
 #dois {
