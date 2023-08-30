@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos adicionais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        body{
+            position: relative;/**/
+            background-image: url(../../imagem/logo.png);
+            background-repeat: no-repeat;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25px;
+            border-bottom: 1px solid #1f1f1f1f;
+            box-shadow: 0px 0px 3px gray;
+            position: fixed;/* para ficar fixo relacionado ao body*/
+            z-index: 1;/* e para o elemento ficar a frente*/
+            background-color: blue;
+            width: 100%;
+        }
+        nav > a{
+            margin-right: 25px;
+            text-decoration: none;
+            color: black;
+        }
+        #btn-inicio{
+            height: 20px;
+            width: 50px;
+            background-color: blue;
+            color: white;
+            position: absolute;
+            bottom: 50px;
+            z-index: 1;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" id="inicio">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../imagem/naruto1.jpg"  class="d-block w-100" alt="naruto1">
+          </div>
+          <div class="carousel-item">
+            <img src="../../imagem/naruto2.jpg" class="d-block w-100" alt="naruto2">
+          </div>
+          <div class="carousel-item">
+            <img src="../../imagem/naruto3.jpg" class="d-block w-100" alt="naruto3">
+          </div>
+          <div class="carousel-item">
+            <img src="../../imagem/naruto3.jpg" class="d-block w-100" alt="naruto3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/CLoquaMM8x8?si=Qeit_fnZGVZSLcdK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--ir no youtube em compartilhar + incorporar copiar-->
+
+      
+      <br>
+
+      <video src="" controls></video>
+
+      <br>
+
+      <audio src="" controls></audio>
+   
+
+
+      <div id="btn-inicio">
+        <a href="#inicio">inicio</a>
+      </div>
+      <br>
+      <hr>
+      <form action="">
+
+            <input type="checkbox" name="html" id="ihtml">
+            <label for="ihtml">HTML</label>
+
+            <input type="checkbox" name="css" id="icss">
+            <label for="ihtml">CSS</label>
+        
+            <input type="checkbox" name="javascript" id="ijavascript">
+            <label for="ijavascript">JS</label>
+            
+      </form>
+      <hr>
+      <p>Selecione os cursos</p>
+
+      <input type="radio" name="cursos" id="ifrontend" value="frontend">
+      <label for="ifrontend">Fron-tend</label>
+
+      <input type="radio" name="cursos" id="ibackend" value="backend">
+      <label for="ibackend">Back-end</label>
+
+      <input type="radio" name="cursos" id="ibancodedados" value="bancodedados"><label for="ibancodedados">Banco de Dados</label>
+       
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!--elemento relativo e quem esta esperando alguem para se relacionar e absoluto e quem vai se relacionar com alguem-->
+</body>
+</html>

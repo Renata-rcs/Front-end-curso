@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos adicionais 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        body{
+            position: relative;/**/
+            background-image: url(../../imagem/logo.png);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: contain ;
+            width: 100vw;
+            height: 100vh;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25px;
+            border-bottom: 1px solid #1f1f1f1f;
+            box-shadow: 0px 0px 3px gray;
+            position: fixed;/* para ficar fixo relacionado ao body*/
+            z-index: 1;/* e para o elemento ficar a frente*/
+            background-color: blue;
+            width: 100%;
+        }
+        nav > a{
+            margin-right: 25px;
+            text-decoration: none;
+            color: black;
+        }
+     
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" id="inicio">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </nav>
+
+   
+</body>
+</html>
