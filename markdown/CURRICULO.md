@@ -28,7 +28,7 @@ Centro Universitário IESB- Polo Oeste
 ---
 
 
-### Cursos Concluídos
+### **Cursos:**
 
 **Desenvolvedor Front-end**
 Instituição: SENAI
@@ -46,7 +46,9 @@ Descrição: Curso focado em desenvolver habilidades fundamentais em lógica de 
 Instituição: SENAI
 Descrição: Curso abrangente sobre os princípios e fundamentos da tecnologia da informação, fornecendo uma visão geral do campo.
 
+
 ---
+
 
 ### **Características Pessoais:**
 
