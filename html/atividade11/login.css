@@ -42,31 +42,39 @@ form {
 }
 
 h1 {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
-.imput {
+.input {
     width: 100%;
-    height: 12%;
-    margin: 20px;
-    border: 0;
+    height: 30%;
+    margin: 2px;
+    border: 2px;
     border-radius: 5px;
-    text-indent: 20px;
+    text-indent: 2px;
 }
-.imput::placeholder{
+#iemail{
+    height: 30px;
+}
+#isenha{
+    height: 30px;
+}
+
+.input::placeholder{
     color: white;
 }
 #bot {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-bottom: 5px;
     width: 100%;
-    height: 60%;
+    height: 50%;
     background-color: red;
     color: white;
     border-radius: 5px;
     border: 0;
+    text-align: center;
 }
 #dois {
-    margin-top: 10px;
+    margin-top: 4px;
     font-size: 10px;
     display: flex;
     justify-content: space-between;

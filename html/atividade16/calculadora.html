@@ -10,24 +10,26 @@
 <body>
     <h1>Calculadora</h1>
 
-    <form id="calculadora">
-        <div>
-            <label for="n1"></label>
-            <input type="number" name="n1" id="n1">
-        </div>
-        <br>
-        <div>    
-            <label for="n2"></label>
-            <input type="number" name="n2" id="n2">
-        </div>
-        <br>
-            <input type="button" value="+" id="soma" onclick="calcular()">
-            <input type="button" value="-" id="subtracao" onclick="calcular()">
-            <input type="button" value="*" id="multiplicacao" onclick="calcular()">
-            <input type="button" value="/" id="divisao" onclick="calcular()">
-            <div id="resposta"></div>
-           
-    </form>
-
+    <div>
+        <form id="calculadora">
+            <div>
+                <label for="n1"></label>
+                <input type="number" name="n1" id="n1" >
+            </div>
+            <br>
+            <div>
+                <label for="n2"></label>
+                <input type="number" name="n2" id="n2">
+            </div>
+            <br>
+                <input type="button" value="+" id="soma">
+                <input type="button" value="-" id="subtracao">
+                <input type="button" value="*" id="multiplicacao">
+                <input type="button" value="/" id="divisao">
+                <div id="resposta"></div>
+        
+        </form>
+    </div>
+    <script src="./calculadora.js"></script>
 </body>
 </html>

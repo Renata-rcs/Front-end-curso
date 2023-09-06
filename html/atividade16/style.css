@@ -1,1 +1,29 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    background-color:pink;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+body > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
 
+}
+#calculadora{
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    background-color: fuchsia;
+}
+#n1{
+    border-radius: 5px;
+    width: 10px;
+}
