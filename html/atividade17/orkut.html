@@ -4,36 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orkut</title>
-    <link rel="stylesheet" href="orkut.css">
+  <link rel="stylesheet" href="./orkut.css">
 </head>
 <body>
-    <div>
-        <div>
+    <div class="primeira">
+        <p><b><span class="span1"> Aviso:</span></b> O Orkut.br não tem vinculo com o Google.</p>
+    </div>
+    <div id="container">
+        <div id="um">
             <img src="../../imagem/orkut.png" alt="Orkut logo" width="400" height="200">
             <p><b><span>Conecta-se</span></b> aos seus amigos e familiares usando recados e mensagens instantâneas</p>
             <p><b><span>Conheça</span></b> novas pesssoas através de amigos de seus amigos e comunidades</p>
-            <p><b><span>Compartilhe</span></b> seus vídeos, fotos e paix~es em um só lugar</p>
+            <p><b><span>Compartilhe</span></b> seus vídeos, fotos e paixões em um só lugar</p>
         </div>
-        <div>
+    <div>
+        <div id="dois">
             <form action="#" method="post" id="formulario">
-                <div>
-                    <label for="login">Login:</label>
-                    <input type="text" id="login" name="login">
+                <p style="text-align: center;">Acesse o <b>Orkut.br</b> com a sua conta</p>
+                
+                <div class="email">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="iemail" name="email">
                 </div>
-                <br>
-                <div>
+                <div class="senha">
                     <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha">
+                    <input type="password" id="isenha" name="senha">
                 </div>
-                <br>
-                <div>
-                    <input type="submit" value="Entrar" id="entrar">
+               <div class="container2">
+                <div class="checkbox">
+                    <input type="checkbox" id="icheckbox" name="checkbox">
                 </div>
+                <div id="label">
+                <label>Salvar as minhas informações neste computador</label> 
+                </div>
+                </div>
+                <div class="p">
+                    <p>Não use em computadores públicos.
+                        [?]</p>
+                </div>
+
+               <div class="btn">
+                <input type="submit" value="Login" id="login">
+               </div>
+               <a href="#">Não consegui acessar sua conta?</a>
             </form>
         </div>
+        <div id="tres">
+            <p>Ainda não é membro?</p>
+            <a href="#"><b>ENTRAR JÁ</b></a>
+        </div>
     </div>
-    <div>
-       <p> &copy 2017 Orkut</p>
     </div>
+    <br>
+    <div id="ultima">
+          <p>&copy 2017 Orkut.br -</p>
+          <a href="#">Sobre o Orkut.br - </a> 
+          <a href="#">Centro de segurança - </a>          
+          <a href="#">Privacidade - </a>         
+          <a href="#">Termos - </a>        
+          <a href="#">Contato - </a>       
+          <p>Desenvolvido por </p><a href="#"> Murilo Fagá</a>
+      </div>
 </body>
 </html>
