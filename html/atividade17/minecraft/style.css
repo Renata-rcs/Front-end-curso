@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url(../../../fontes/Minecrafter.Reg.ttf) format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-image: url(../../../imagem/minecraft-001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; /* Para garantir que a imagem não seja repetida */
+    background-attachment: fixed; /* Fixar a imagem de fundo, se desejar */
+    text-align: center;
+    width: 100vw;
+    height:100 vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden; /* Evita que a imagem crie uma barra de rolagem */
+
+}
+img{
+    margin-top: 50px;
+    width: 400px;
+    height: 75px;
+    position: fixed;
+    top: 15px;
+    left: 36.5%;
+    z-index: 1; /* Z-index maior para a imagem */
+}
+body > div{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 680px;
+    height: 450px;
+    background-color: #262626;
+
+}
+h1{
+    font-family: Minecraft, sans-serif;
+    margin-top: 100px;
+    font-weight: bolder;
+}
+#dois{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+form{
+    padding: 0;
+    justify-content: center;
+    background-color:#262626;
+    height: 360px;
+    width: 540px;
+    color: #ffffff;
+    
+   
+}
+.divinput1, .divinput2{
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 20px;
+   
+}
+a{
+    color: white;
+}
+#iemail{
+    width: 540px;
+    height: 30px;
+
+}
+#isenha{
+    width: 540px;
+    height: 30px;
+}
+#bot1{
+    font-family:  Minecraft, sans-serif;
+    font-weight: 500px;
+    font-size: 24px;
+    width: 540px;
+    height: 55px;
+    background-color: #008b44;
+    border: 2px solid black;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#botao2{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    border: 2px solid red;
+    cursor: pointer;
+    background-color: red;
+}
+
+#bot2 {
+    width: 380px;
+    height: 30px;
+    background-color: #262626;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.erro{
+    border: 2px solid red;
+}
+@media (max-width: 1400px) {
+    .image{
+       display: none;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    html{
+        width: 100%;
+    }
+    /* Define uma largura máxima para o contêiner principal */
+    body {
+        max-width: 100%; /* Escolha o valor que melhor se adapte ao seu layout */
+        margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    }
+    div{
+        width:50%;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+     }
+    form{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .divinput1, .divinput2, .divinput {
+        width:100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        border: 0; /* Define a largura dos elementos internos como 100% para ocupar a largura do contêiner principal */
+    }
+}
+
+

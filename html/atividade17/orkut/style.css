@@ -129,7 +129,9 @@ form {
     justify-content:center; 
     align-items: center;
 }
-
+.erro{
+    border: 2px solid red;
+}
 
 @media (max-width: 949px) {
     .container{
