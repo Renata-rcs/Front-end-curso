@@ -11,10 +11,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid grey;
     font-weight: bold;
     height: 60px;
-    background-color:grey;
+    background-color:orangered;
     position: fixed;
     width: 100%;
     top: 0;
@@ -33,15 +33,19 @@ nav{
 }
 .material-symbols-outlined {
     position: absolute;
-    right: 30px;
+    right: 50px;
     display:none ;
     color: white;
+    cursor: pointer;
+ 
 }
+
 a{
   color: white;
   text-decoration: none;
 }
 main{
+    margin-top: 100px;
     height: 650px;
     width: 100%;
 }
@@ -50,18 +54,20 @@ ul{
 }
 
 div{
-    margin: 100px 10px;
+    margin: 10px 30px;
 }
 #login, #senha{
-    margin: 30px;
+    margin: 10px 30px;
+    border: 1px solid black;
+  
 }
-input{
-   margin: 0 20px;
+#bot{
+    margin: 10px 30px;
 }
 footer{
     width: 100%;
     display: flex;
-    background-color: gray;
+    background-color: orangered;
     text-align: center;
     height: 120px;
     bottom: 0;
@@ -72,10 +78,22 @@ footer{
     color: white;
 }
 .aparece{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    background-color: orangered;
+    color: white;
+    padding: 30px;
+    border: 1px solid gray;
+    top: 100%;
+    position: absolute;
+    right: 0;
+  
+}
+.aparece a{
+  margin-top: 30px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 780px) {
     nav{
         display: none;
     }

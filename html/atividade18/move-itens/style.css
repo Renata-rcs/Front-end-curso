@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-list {
+    width: 40%;
+    border: 1px solid gray;
+    padding: 10px;
+    list-style: none;
+}
+
+.item-list li {
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s; 
+}
+
+.transfer-button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#left-list .selecionado {
+   border: 5px solid blue;
+}
+
+
+#right-list .selecionado {
+    border: 5px solid fuchsia;
+
+}

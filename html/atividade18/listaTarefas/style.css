@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container-tarefas {
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#campo-tarefa {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#botao-adicionar {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#lista-tarefas {
+    list-style: none;
+    padding: 0;
+}
+
+.item-tarefa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.item-tarefa.concluida {
+    background-color: #c3e6cb; /* Cor de fundo para tarefas concluídas */
+}
+
+.item-tarefa .texto-tarefa {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.botao-concluir {
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+}
+
+.botao-excluir {
+    font-size: 20px;
+    color:red;
+    cursor: pointer;
+}
