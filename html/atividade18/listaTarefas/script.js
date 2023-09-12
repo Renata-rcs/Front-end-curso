@@ -2,12 +2,11 @@ const campoTarefa = document.getElementById('campo-tarefa');
 const botaoAdicionar = document.getElementById('botao-adicionar');
 const listaTarefas = document.getElementById('lista-tarefas');
 
-// Adiciona uma nova tarefa quando o botão "Adicionar" é clicado
+
 botaoAdicionar.addEventListener('click', adicionarTarefa);
 
-// Adiciona uma nova tarefa quando a tecla "Enter" é pressionada no campo de entrada
-campoTarefa.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
+campoTarefa.addEventListener('click', function (e) {
+    if (e.click === 'Enter') {
         adicionarTarefa();
     }
 });
@@ -19,7 +18,7 @@ function adicionarTarefa() {
         itemTarefa.classList.add('item-tarefa');
         itemTarefa.innerHTML = `
             <span class="texto-tarefa">${textoTarefa}</span>
-            <span class="botao-concluir" onclick="concluirTarefa(this)">➜</span>
+            <span class="botao-concluir" onclick="concluirTarefa(this)">✔</span>
             <span class="botao-excluir" onclick="excluirTarefa(this)">❌</span>
         `;
         listaTarefas.appendChild(itemTarefa);

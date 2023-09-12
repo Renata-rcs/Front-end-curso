@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     width: 100vw;
+     height: 100hw;
+     font-family: Arial, Helvetica, sans-serif;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+
+}
+table {
+    border-collapse: collapse;/* faz uma borda em volta de toda a tabela*/
+    margin: 20px auto;
+}
+  
+td {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 150px;
+    font-weight: bold;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+  
+
+.vencedor {
+    background-color: green /* Cor de fundo para células vencedoras */
+}
+  
+ 
+#resultado {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: red;
+}
+  
+#reiniciar {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color:purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+ 
+h1 {
+    text-align: center;
+    color: purple;
+}

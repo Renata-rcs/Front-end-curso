@@ -2,11 +2,11 @@ const listaEsquerda = document.getElementById('left-list');
 const listaDireita = document.getElementById('right-list');
 const botaoTransferir = document.getElementById('botao-transferir');
 
-// Adiciona ou remove a classe 'selecionado' quando um item é clicado
+
 listaEsquerda.addEventListener('click', alternarSelecao);
 listaDireita.addEventListener('click', alternarSelecao);
 
-// Move itens selecionados da lista da esquerda para a lista da direita ou vice-versa
+
 botaoTransferir.addEventListener('click', moverItens);
 
 function alternarSelecao(evento) {

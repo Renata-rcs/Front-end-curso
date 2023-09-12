@@ -45,3 +45,19 @@ body{
     border: 5px solid fuchsia;
 
 }
+@media (max-width: 780px) {
+    body{
+        flex-direction: column;
+    }
+    .list-container{
+        height: 100vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .item-tarefa{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
