@@ -7,28 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lista de <span>tarefas</span></h1>
+    <header>
+        <h1>Lista de <span>tarefas</span></h1>
+    </header>
     <main class="container">
         <form id="cadastro">
             <input type="text" name="text-input" id="text-input" placeholder="Digite sua nova tarefa">
-            <button>Adicionar</button>
+            <button id="adicionar">Adicionar tarefa</button>
         </form>
         <div id="tarefas">
             <ul>
-                <li>Tarefa 1
-                    <div>
-                        <button class="excluir">Excluir❌</button>
-                        <button class="concluir">Realizada ✔</button>
-                      </div>
-                </li> 
-                <li>Tarefa 2
-                  <div>
-                    <button class="excluir">Excluir❌</button>
-                    <button class="concluir">Concluida ✔</button>
-                  </div>
-                </li> 
+             
             </ul>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
