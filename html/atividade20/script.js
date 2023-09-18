@@ -36,8 +36,9 @@ listaTarefas.addEventListener('click', (elemento) =>{
 })
 
 function criarTarefa(valorTarefa){
-
-    const li = document.createElement('li')
+    localStorage.setItem('listaTraefas', JSON.stringify(tarefas))
+    const li = document.createElement('li') 
+   
 
    
 
@@ -54,6 +55,10 @@ function criarTarefa(valorTarefa){
 
 function renderizarTarefa(tarefa){
     const listaTarefas = document.querySelector('ul')
+    
 
     listaTarefas.appendChild(tarefa)
 }
+
+
+
