@@ -11,6 +11,8 @@
     --darkset:#202C39;
     --brand:#97591c;
     --buttoncolor: #31a931;
+    --cancela: red;
+
 }
  *{
     margin: 0;
@@ -122,4 +124,39 @@ img{
 }
 .concluido{
     text-decoration: line-through;
+}
+.modal{
+    display: none !important;
+    background-color: var(--lighttest);
+    color: var(--darkset);
+    width: 100%;
+    height: 200px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+#cancela{
+    background-color:var(--cancela) ;
+    color: var(--lighttest);
+    border-radius: 5px;
+    margin: 5px;
+}
+#confirma{
+    background-color: var(--buttoncolor);
+    color: var(--lighttest);
+    border-radius: 5px;
+    margin: 5px;
+}
+#p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+#btn-cancela-confirma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
 }

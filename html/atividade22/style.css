@@ -1,0 +1,39 @@
+@import url(modal.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --dark: black;
+    --light: white;
+    --medium: #2a2a2a;
+    --confirmar: #18c818;
+    --cancelar: #bc0707;
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../imagem/pexels-charles-parker-5847583.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+button{
+    padding: 1em;
+    background-color: var(--dark);
+    color: var(--light);
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--medium);
+}
