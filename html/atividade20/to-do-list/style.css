@@ -125,8 +125,10 @@ img{
 .concluido{
     text-decoration: line-through;
 }
+#hide{
+    display: none;
+}
 .modal{
-    display: none !important;
     background-color: var(--lighttest);
     color: var(--darkset);
     width: 100%;
@@ -136,6 +138,7 @@ img{
     align-items: center;
     border-radius: 5px;
 }
+
 #cancela{
     background-color:var(--cancela) ;
     color: var(--lighttest);

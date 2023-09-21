@@ -2,7 +2,7 @@ const btnAdicionar = document.getElementById('adicionar')
 const valorTarefa = document.getElementById('text-input') 
 const confirmar = document.getElementById('confirma')
 const cancelar = document.getElementById('cancela')
-const modal = document.querySelector('modal')
+const modal = document.querySelector('.modal')
 let array = []
 
 btnAdicionar.addEventListener('click', (evento)=>{
@@ -38,7 +38,7 @@ listaTarefas.addEventListener('click', (elemento) =>{
     const itemClicado = elemento.target
    
     if(itemClicado.classList.contains('excluir')){
-       itemClicado = modal
+       openModal();
        let removeTexto = itemClicado.parentElement.parentElement.firstChild.innerText 
        let compararTexto = JSON.parse(localStorage.getItem('adicionar'))
        compararTexto.splice(compararTexto.indexOf(removeTexto), 1)
@@ -90,7 +90,25 @@ if(localStorage.getItem('adicionar')){
 
 }
 
+function openModal(){
+    
+    modal.classList.remove('hide')
+}
 
+confirmar.addEventListener('click', fecharAlert)
+
+function fecharAlert(){
+
+    alert('Confirmado ✔')
+    modal.classList.add('hide')
+}
+
+cancelar.addEventListener('click', fechar)
+
+function fechar(){
+    
+    modal.classList.add('hide')
+}
 
 
 
