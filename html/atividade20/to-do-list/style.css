@@ -125,8 +125,8 @@ img{
 .concluido{
     text-decoration: line-through;
 }
-#hide{
-    display: none;
+.hide{
+    display: none!important;
 }
 .modal{
     background-color: var(--lighttest);

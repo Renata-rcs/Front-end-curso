@@ -38,8 +38,8 @@ listaTarefas.addEventListener('click', (elemento) =>{
     const itemClicado = elemento.target
    
     if(itemClicado.classList.contains('excluir')){
-       openModal();
-       let removeTexto = itemClicado.parentElement.parentElement.firstChild.innerText 
+        let removeTexto = itemClicado.parentElement.parentElement.firstChild.innerText 
+        openModal(removeTexto, itemClicado);
        let compararTexto = JSON.parse(localStorage.getItem('adicionar'))
        compararTexto.splice(compararTexto.indexOf(removeTexto), 1)
        localStorage.setItem('adicionar', JSON.stringify(compararTexto))
@@ -90,25 +90,20 @@ if(localStorage.getItem('adicionar')){
 
 }
 
-function openModal(){
-    
+function openModal(resposta, alvo){
     modal.classList.remove('hide')
+    confirmar.addEventListener('click', () => {
+        alert('Confirmado ✔')
+        modal.classList.add('hide')
+    })
+
+    cancelar.addEventListener('click', () => {
+        modal.classList.add('hide')
+    })
+
 }
 
-confirmar.addEventListener('click', fecharAlert)
 
-function fecharAlert(){
-
-    alert('Confirmado ✔')
-    modal.classList.add('hide')
-}
-
-cancelar.addEventListener('click', fechar)
-
-function fechar(){
-    
-    modal.classList.add('hide')
-}
 
 
 
