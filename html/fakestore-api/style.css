@@ -10,44 +10,106 @@ body{
     width: 100vw;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Estilos para o cabeçalho */
 header {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid black;
-    font-weight: 600;/*largura da font-family*/
-    height: 60px;
-    background-color: #ffffff;
-}
-#nav-primeiro{
-    width: 100%;
-    right: 40px;
-}
-#nav-segundo{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    
-}
-a {
-    text-decoration: none;
+    background-color: white
 }
 
-.secao{
-    margin: 50px;
+#nav-primeiro {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
+    padding: 0 20px;
+    height: 50px;
 }
-.produtos{
+
+#nav-primeiro p {
+    font-size: 24px;
+    margin: 0;
+}
+#nav-primeiro img{
+    width: 120px;
+}
+#nav-primeiro input[type="text"] {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-bottom: 0;
+}
+
+#nav-segundo {
+    background-color: red;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+#nav-segundo a {
+    color:white;
+    text-decoration: none;
+    margin: 0 40px;
+}
+main{
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+.principal{
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    width: 350px;
-    height:350px ;
-    background-color: pink;
+    justify-content: center;
+    align-items: center;
 }
-#prod{
-    width: 350px;
-    height: 300px;
+.carousel{
+    width: 800px;
+}
+
+#carouselExampleIndicators {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.secao {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#div-h3{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+h3{
+    font-weight: 900;
+
+}
+h4{
+    font-size: 20px;
+}
+
+.produtos {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px 50px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produtos img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #bdb8b8;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
