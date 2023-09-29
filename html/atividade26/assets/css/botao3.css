@@ -1,0 +1,12 @@
+#btn-3{
+    background-color: var(--purple);
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    transition: transform 1s;
+}
+#btn-3:hover{
+    transform: rotateY(130deg);
+    
+    /* transform: translatex(180px); */
+}

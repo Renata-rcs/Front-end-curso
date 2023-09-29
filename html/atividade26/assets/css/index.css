@@ -1,0 +1,30 @@
+@import url(./botao1.css);
+@import url(./botao2.css);
+@import url(./botao3.css);
+@import url(./botao4.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--light);
+}
+:root{
+    --light: white;
+    --blue: blue;
+    --orange: orangered;
+    --purple: purple;
+    --green: green;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 2em;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
